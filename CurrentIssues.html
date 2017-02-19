@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="author" content="http://www.auricletechnologies.com/">
+<meta name="msvalidate.01" content="B90D558770B6180BF64ACC31E29406CD" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>IJPP - Volume1-Issue1</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="icon" type="image/png" href="http://www.ijppjournal.org/images/myicon1.jpg" />
+<meta name="description" content="IJPP - International Journal of Pharmacy and Pharmaceutical" />
+<meta name="keywords" content="IJPP - International Journal of Pharmacy and Pharmaceutical" />
+<link rel="stylesheet" href="http://www.ijppjournal.org/css/zerogrid.css">
+<link rel="stylesheet" href="http://www.ijppjournal.org/css/style.css">
+<link rel="stylesheet" href="http://www.ijppjournal.org/css/responsive.css">
+<link rel="stylesheet" href="http://www.ijppjournal.org/css/sitePopUp.css">
+<link rel="stylesheet" href="http://www.ijppjournal.org/css/reveal.css">
+
+<!--menu-->
+<link rel="stylesheet" href="http://www.ijppjournal.org/css/ddsmoothmenu.css">
+<script type="text/javascript" src="http://www.ijppjournal.org/js/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.ijppjournal.org/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="http://www.ijppjournal.org/js/jquery.reveal.js"></script>
+<script type="text/javascript" src="http://www.ijppjournal.org/js/jquery-1.6.min.js"></script>
+
+</head>
+<body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.ijppjournal.org");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#dismiss').live('click', function(){
+		$('.output').fadeOut(0);
+	});
+	$('#admorebtn').live('click', function(){
+		$('#morefieldwrap').append('<p><input type="file" name="file[]" multiple="multiple" autocomplete="off" required="required" class="field filefield" /><input type="button" value="Remove" id="rmmorebtn" class="mrbtn" /></p>');
+	});
+	$('#rmmorebtn').live('click', function(){
+		$(this).parent('p').remove();
+	});
+	$('.downloadLink').live('click', function(){
+		var id = $(this).attr('id');
+		$.ajax({
+			type:"POST",
+			url:"http://www.ijppjournal.org/IMAGE/",
+			data:"cmd=downloads&id=" + id,
+			cache:false,
+			success: function(){}
+		});
+	});
+	$('#closeSitePopUp').live('click', function(){
+		$('.sitePopUp').fadeOut(0);
+	});
+});
+</script>
+
+
+<script type="text/javascript">
+try {
+} catch(err) {}</script>
+
+<header>
+   <div class="wrap-header zerogrid" style="position:relative;">
+     <img src="http://www.ijppjournal.org/images/myicon1.jpg" alt="IJPP" width="185" height="200" /><br>
+
+<div class="logocontent" style="left:200px; top:55px; position:absolute; font-size:30px; color:#086A87; text-align:center;">International Journal of Pharmacy and Pharmaceutical</div>
+
+</div>
+<!--<div class="logocontent" style="left:350px; top:85px; position:absolute; font-size:25px; color:#000000; text-align:center;"><p style="left:20px"; style="font-size:18px;font-size:5px; color:#18b3e4; margin:8px;">International Journals </p>
+</div>-->
+<div class="logocontent" style="left:395px; top:90px; position:absolute; font-size:18px; color:#000000; text-align:center;"><p style="left:20px"; style="font-size:18px;font-size:5px; color:#18b3e4; margin:8px;">Scholary Peer Reviewed Research Publishing Journals </p></div>
+  </div>
+</header>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71638505-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<div class="clear"></div>
+<div class="zerogrid">
+  <div >
+
+      <ul id="css3menu1" class="topmenu">
+        <li class="topfirst"><a href="http://www.ijppjournal.org" style="width:110px;height:8px;line-height:9px; text-align:center;">Welcome</a></li>
+       <li class="topmenu"><a  style="width:120px;height:8px;line-height:9px; text-align:center;">About IJPP</a>
+	             <ul>
+	    <li><a href="http://www.ijppjournal.org/About.html" style="width:110px;height:8px;line-height:9px; text-align:left;">About us</a></li>
+
+	               <li><a href="http://www.ijppjournal.org/Indexing.html" style="width:100px;height:8px;line-height:9px; text-align:left;">IJPP Indexing</a></li>
+	             </ul>
+        </li>
+        <li class="topmenu"><a href="http://www.ijppjournal.org/callforpaper.html" style="width:120px;height:8px;line-height:9px; text-align:center;">Call For Paper</a> </li>
+        <li class="topmenu"><a href="http://www.ijppjournal.org/Archives.html" style="width:120px;height:8px;line-height:9px; text-align:center;">IJPP Archives</a></li>
+        <li class="topmenu"><a  style="width:120px;height:8px;line-height:9px; text-align:center;">For Author</a>
+          <ul>
+                <li class="subfirst"><a href="http://www.ijppjournal.org/publication-guidelines.html" style="width:135px;height:8px;line-height:9px; text-align:left;">Publication Guidelines</a></li>
+           <li><a href="http://www.ijppjournal.org/PeerReview.html" style="width:100px;height:8px;line-height:9px; text-align:left;">Peer Review</a></li>
+            <li><a href="http://www.ijppjournal.org/Publication-Fee.html"  style="width:100px;height:8px;line-height:19px; text-align:left;">Processing Fee</a></li>
+             <li><a href="http://www.ijppjournal.org/Submit-Paper.html" style="width:100px;height:8px;line-height:9px; text-align:left;">Submit Your Paper</a></li>
+          </ul>
+        </li>
+
+        <li class="topmenu"><a href="http://www.ijppjournal.org/faq.html" style="width:100px;height:8px;line-height:9px; text-align:center;">FAQs</a></li>
+        <li class="topmenu"><a href="http://www.ijppjournal.org/Contact.html" style="width:110px;height:8px;line-height:9px; text-align:center;">Contact Us</a></li>
+              </ul>
+    </div>
+</div><div class="clear"></div>
+<section id="content">
+  <div class="wrap-content zerogrid">
+
+     <marquee direction="left" scrollamount="3" scrolldelay="3">
+    <a name="up" id="up"></a><strong><font color="#000000">Anybody can submit their paper by mailing at IJPPchief@gmail.com</font></strong>
+</marquee>
+
+
+	      <div class="clear"></div>
+	  <div id="sidebar" class="right col-1-4">
+  <div class="wrap-col">
+
+<div class="box">
+      <div class="heading">
+        <h2>IJPP - Menu</h2>
+      </div>
+      <div class="content" style="">
+	  					<ul>
+<li><a href="http://www.ijppjournal.org/Home.html" title="Home">Home</a></li>
+<li><a href="http://www.ijppjournal.org/aimscope.html" title="Aim and Scope">Aim and Scope</a></li>
+<li><a href="http://www.ijppjournal.org/Editorialboard.html" title="Journals">Editorialboard</a></li>
+<li><a href="http://www.ijppjournal.org/callforpaper.html" title="Call For Paper">Call For Paper</a></li>
+<li><a href="http://www.ijppjournal.org/Publication-Fee.html" title="Processing Charges">Processing Charges</a></li>
+<li><a href="http://www.ijppjournal.org/publish_paper.html" title="Submission">Submission</a></li>
+<li><a href="http://www.ijppjournal.org/instructions.html" title=" Author Instructions">Author Instructions</a></li>
+ </ul>
+
+
+
+      </div>
+    </div>
+
+<div class="box">
+      <div class="heading">
+        <h2>IJPP - Thesis</h2>
+      </div>
+      <div class="content" style="">
+	  					<ul>
+<li><a href="http://www.ijppjournal.org/CurrentIssues.html" title="CurrentIssues">CurrentIssues</a></li>
+<li><a href="http://www.ijppjournal.org/Archives.html" title="Archives">Archives</a></li>
+
+ </ul>
+</div>
+    </div>
+
+<div class="box">
+      <div class="heading">
+        <h2>Downloads</h2>
+      </div>
+      <div class="content" style="">
+	  					<ul>
+<li><a href="http://www.ijppjournal.org/images/IJPP-CopyrightForm.docx" title="Copyright-Form">Copyright Form</a></li>
+<li><a href="http://www.ijppjournal.org/images/IJPP Paper Format.docx" title="Paper Format">Paper Format</a></li>
+
+ </ul>
+
+      </div>
+    </div>
+
+<div class="box">
+      <div class="heading">
+        <h2>Call For Paper</h2>
+      </div>
+      <div class="content" style="">
+<div class="info" style="font-size:14px;text-align:center;">Submission Last Date :  <p style="font-weight:bold; color:#08088A; margin-top:-5px; margin-bottom:-5px;">31 st  July - 2016</p></div>
+                            <div class="info" style="font-size:14px;text-align:center;">Acceptance Notification :  <p style=" font-weight:bold; color:#08088A; margin-top:-5px; margin-bottom:-5px;">in 3 days</p></div>
+                            <div class="info" style="font-size:14px;text-align:center;">Publication Date :  <p style=" font-weight:bold; color:#08088A; margin-top:-8px;">in 2 days</p></div>
+
+
+
+      </div>
+    </div>
+
+
+
+			    <div class="box">
+      <div class="heading">
+        <h2>IJPP - News</h2>
+      </div>
+<marquee scrollamount="2" direction="up" onmouseover="this.stop()"  onmouseout="this.start()" loop="true" width="100%">
+
+          <center> <font color="#086A87">
+					IJPP provides e-certificate of publication to authors.</font>
+					</center><br>
+
+					<center> <font color="#086A87">
+					<a href="http://www.ijppjournal.org/callforpaper.html">Call For Paper</a> for Cureent Issues.</font>
+					</center><br>
+
+					<center> <font color="#086A87">
+					 Inviting for Join As Reviewers.</font>
+					</center><br>
+
+                                        <center> <font color="#086A87">
+					 You can submit research article to <a href="http://www.ijppjournal.org/callforpaper.html"> respective journal mail id</a>.</font>
+					</center><br>
+
+				</marquee>
+
+
+    </div>
+
+
+		<div class="box">
+      <div class="heading">
+        <h2>Online Visiters</h2>
+      </div>
+		 <br>
+<center><script type="text/javascript" src="http://widget.supercounters.com/flag.js"></script><script type="text/javascript">sc_flag(1246642,"FFFFFF","000000","cccccc",2,10,0,0)</script><br><noscript><a href="http://www.supercounters.com/">Flag Counter</a></noscript>
+</center> <br>
+
+
+    </div>
+  </div>
+</div>
+      <!--=========================================contact query=====================================-->
+      <div id="main-content" class="col-3-6">
+        <div class="wrap-col">
+
+	          <article>
+            <div class="heading">
+              <center><h2>IJPP - International Journal of Pharmacy and Pharmaceutical</h2></center>
+      </div>
+<h2>Volume1 Issue1</h2>
+
+            <div class="content" style="text-align:justify;"><br>
+              <p>
+
+
+<!--table Start -->
+
+<table class="MsoTableGrid" style="max-width: 95%; border-collapse: collapse; border-spacing: 1px; padding: 3px; margin: 10px 0px; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 25px; border: none; background-color: #fffff" border="2" cellspacing="0" cellpadding="2">
+
+<tbody
+        <tr>
+            <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0">
+
+          <div align="center"><strong>S.No.</strong></div></td>
+            <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0">
+
+          <p align="center"><strong><center>Title/Author Name </center></strong></p></td>
+
+           <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0">
+
+          <div align="center"><strong>Page No. </strong></div></td>
+        </tr>
+        <tr>
+      <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">1. </div></td>
+
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Microcontroller using Density Based Traffic Signal Systeming</a></strong></p><br>
+              <p class="style2">Authors: Kirti Karande, Hardik Vaghela</p>
+
+<div id="content-dece">
+      <ul>
+
+ <li>[ <a href="#" class="big-link" data-reveal-id="1"><font color="red"> Abstract </font></a> ]
+[ <a href="#" class="big-link" data-reveal-id="2"><font color="red"> cite </font></a>]
+[ <a href="http://www.ijppjournal.org/IJMCT/Volume1/Issue1/IJMCT-V1I1P1.pdf" target="balnk"><font color="red"> PDF </font></a>]</li>
+
+  <div id="1" class="reveal-modal">
+	 <h2>Abstract :-</h2>The project is designed to develop a concentration based dynamic traffic pointer system. The signal altered automatically on sensing the transfer. The system tries to condense possibilities of traffic jams, caused by traffic lights, to an level. The structure is based on microcontroller. We are proposing such a system that compact with such kind of problem by automatically switching the signal by calculating the time at which the vehicles inwards at stop line. The image captured in the traffic signal is processed and transformed into grayscale image then its threshold is calculated asked on which the shape has been drawn in order to calculate the number of vehicles current in the image. Administrator sitting on computer can domination system (microcontroller) to download recorded information, update light delays, erase memory, etc.<br /><strong><font color="red">Key word :- </font></strong> Microcontroller,Image Processing, light emitting diode, wireless sensor networks.</p>
+			<a class="close-reveal-modal">&#215;</a>
+	  </div>
+        <div id="2" class="reveal-modal">
+	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
+
+			<strong></strong><p class="bord"><font size ="3">Kirti Karande, Hardik Vaghela <font color="red"><em><strong>"Microcontroller using Density Based Traffic Signal Systeming"</em></font></strong> Vol. 1 - Issue 1 ( Nov - Dec 2015), <strong>IJPP - International Journal of Pharmacy and Pharmaceutical</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
+  			<a class="close-reveal-modal">&#215;</a>
+
+
+	  </div></div></td>
+
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>1-4</strong></div></td>
+        </tr>
+
+         <tr>
+      <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">2. </div></td>
+
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Over speed indication and Automatic Accident Avoidance systems in a four wheeler</a></strong></p><br>
+              <p class="style2">Authors: Khushbu M. Lodha, Elkadiri Kamal Eddine</p>
+
+<div id="content-dece">
+      <ul>
+
+ [<a href="#" class="big-link" data-reveal-id="3"><font color="red"> Abstract </font></a>]
+[ <a href="#" class="big-link" data-reveal-id="4"><font color="red"> cite </font></a>]
+[ <a href="http://www.ijppjournal.org/IJMCT/Volume1/Issue1/IJMCT-V1I1P2.pdf" target="balnk"><font color="red"> PDF </font></a>]
+
+  <div id="3" class="reveal-modal">
+	 <h2>Abstract :-</h2>Automotive vehicles are increasingly person equipped with fender-bender avoidance and notice systems for predicting the prospective collision with an peripheral object, such as an extra vehicle or a pedestrian. The system has a computer which stores the speed limits of unusual areas. The GPS in the system feeds the demand location of the car to the computer which looks up in its record to determine the acceptable speed for the area and confines the car within the satisfactory speed. Here is an inductive proximity sensor, requires a metal objective. The proximity sensor fixed near the wheel of vehicle to identify the sensor we permanent one plate on the wheel It also provides a admonition signal to the driver if the expanse between vehicle and obstacle crosses a finicky limit. It also monitors the speed of the vehicle and if the speed maximum value is exceeded it is clued-up to the driver.<br /><strong><font color="red">Key word :- </font> </strong> Accident avoiding system, working of over speed indicator. Brake Assist.</font></p>
+			<a class="close-reveal-modal">&#215;</a>
+	  </div>
+        <div id="4" class="reveal-modal">
+	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
+
+			<strong></strong><p class="bord"><font size ="3">Khushbu M. Lodha, Elkadiri Kamal Eddine <font color="red"><em><strong>"Over speed indication and Automatic Accident Avoidance systems in a four wheeler"</em></font></strong> Vol. 1 - Issue 1 ( Nov - Dec 2015), <strong>IJPP - International Journal of Pharmacy and Pharmaceutical</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
+  			<a class="close-reveal-modal">&#215;</a>
+
+
+	  </div></div></td>
+
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>5-8</strong></div></td>
+        </tr>
+
+
+
+  <tr>
+      <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">3. </div></td>
+
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Earth Process AutomationSpace Techniques </a></strong></p><br>
+              <p class="style2">Authors: Simranjit Kaur, Kiran Jyoti </p>
+
+<div id="content-dece">
+      <ul>
+
+ [<a href="#" class="big-link" data-reveal-id="5"><font color="red"> Abstract </font></a>]
+[ <a href="#" class="big-link" data-reveal-id="6"><font color="red"> cite </font></a>]
+[ <a href="http://www.ijppjournal.org/IJMCT/Volume1/Issue1/IJMCT-V1I1P3.pdf" target="balnk"><font color="red"> PDF </font></a>]
+
+  <div id="5" class="reveal-modal">
+	 <h2>Abstract :-</h2>The space atmosphere is expected to be beneficial for creation of a variety of products. Once the heavy capitalization costs of assembling the withdrawal and built-up facilities is paid, the making will need to be economically cost-effective in order to become self-sustaining and beneficial to society. The most major cost is overcoming the force hurdle for boosting equipment into orbit. Once this barrier is considerably reduced in cost per kilogram, the entry price for space built-up can make it much more good -looking to entrepreneurs. Although solar energy is everywhere and rich, and compact nuclear energy sources can be brought up from Earth, it is still necessary to have machinery in space for capturing, storing, converting, and using the energy. Perhaps non global resources can be used in the creation of some of this machinery.<br /><strong><font color="red">Key word :- </font> </strong> Earth, Electric Wave, Earth Process, Automation.</font></p>
+			<a class="close-reveal-modal">&#215;</a>
+	  </div>
+        <div id="6" class="reveal-modal">
+	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
+
+			<strong></strong><p class="bord"><font size ="3">Simranjit Kaur, Kiran Jyoti <font color="red"><em><strong>"Earth Process Automation Techniques "</em></font></strong> Vol. 1 - Issue 1 ( Nov - Dec 2015), <strong>IJPP - International Journal of Pharmacy and Pharmaceutical</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
+  			<a class="close-reveal-modal">&#215;</a>
+
+
+	  </div></div></td>
+
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>9-11</strong></div></td>
+        </tr>
+
+
+
+<tr>
+      <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">4. </div></td>
+
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Bomb Detection Robotics using Embedded Controller </a></strong></p><br>
+              <p class="style2">Authors: Gurdas , Karan </p>
+
+<div id="content-dece">
+      <ul>
+
+ [<a href="#" class="big-link" data-reveal-id="7"><font color="red"> Abstract </font></a>]
+[ <a href="#" class="big-link" data-reveal-id="8"><font color="red"> cite </font></a>]
+[ <a href="http://www.ijppjournal.org/IJMCT/Volume1/Issue1/IJMCT-V1I1P4.pdf" target="balnk"><font color="red"> PDF </font></a>]
+
+  <div id="7" class="reveal-modal">
+	 <h2>Abstract :-</h2> Now-a-days, robotic systems have less manual operations, flexibility, dependability and accurate. Detect the bomb by transfer the robot to the particular place. A person can work the system from personal computer during wireless RF control. Aims at designing and execute the bomb ,fire and obstacle exposure. The IR sensor is a pair sensors has a beneficiary and a transmitter sensor. In the current scenario of war situations, unmanned systems plays very main role to minimize human losses. This robot is fitted with motors. A micro controller is used to manage all operations. According to the motor operations the robot will operate as individual in program. Whenever any fire is detected, the Buzzer will ON.<br /><strong><font color="red">Key word :- </font> </strong> Bomb Detection, IR sensor, Robotics, Web server.</p>
+			<a class="close-reveal-modal">&#215;</a>
+	  </div>
+        <div id="8" class="reveal-modal">
+	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
+
+			<strong></strong><p class="bord"><font size ="3">Gurdas , Karan , <font color="red"><em><strong>"Bomb Detection Robotics using Embedded Controller "</em></font></strong> Vol. 1 - Issue 1 ( Nov - Dec 2015), <strong>IJPP - International Journal of Pharmacy and Pharmaceutical</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
+  			<a class="close-reveal-modal">&#215;</a>
+
+
+	  </div></div></td>
+
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>12-15</strong></div></td>
+        </tr>
+
+
+
+ <tr>
+      <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">5. </div></td>
+
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Hybrid Design Electro thermal Polymeric Micro gripper with Integrated Force Sensor</a></strong></p><br>
+              <p class="style2">Authors: Utpal , Nihal</p>
+
+<div id="content-dece">
+      <ul>
+
+ [<a href="#" class="big-link" data-reveal-id="9"><font color="red"> Abstract </font></a>]
+[ <a href="#" class="big-link" data-reveal-id="10"><font color="red"> cite </font></a>]
+[ <a href="http://www.ijppjournal.org/IJMCT/Volume1/Issue1/IJMCT-V1I1P5.pdf" target="balnk"><font color="red"> PDF </font></a>]
+
+  <div id="9" class="reveal-modal">
+	 <h2>Abstract :-</h2>Micro grippers are characteristic MEMS devices used to pick, hold and transport micro-objects. Micro grippers are usually used in the field of micro-assembly, micro-surgery and management of micro-particles. This force sensing declaration provides feedback in the range of the forces that overlook the micro management process. The micro gripper, fabricated by electro-discharge machining, features force sensing ability, large force output, and large displacements to contain objects of various sizes. The design parameters for the surrounded electromagnetic actuators were selected on the basis of finite element sensitivity analysis. The concept is also demonstrated with HeLa cells, thus providing a useful tool in biological research and cell assays.<br /><strong><font color="red">Key word :- </font></strong> Hybrid, micro gripper,sensor.</p>
+			<a class="close-reveal-modal">&#215;</a>
+	  </div>
+        <div id="10" class="reveal-modal">
+	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
+
+			<strong></strong><p class="bord"><font size ="3">Utpal , Nihal, <font color="red"><em><strong>"	Hybrid Design Electro thermal Polymeric Micro gripper with Integrated Force Sensor "</em></font></strong> Vol. 1 - Issue 1 ( Nov - Dec 2015), <strong>IJPP - International Journal of Pharmacy and Pharmaceutical</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
+  			<a class="close-reveal-modal">&#215;</a>
+
+
+	  </div></div></td>
+
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>16-19</strong></div></td>
+        </tr>
+
+
+
+      </table>
+
+<br/><br/>
+
+
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+<div class="sitePopUp">
+	<button type="button" id="closeSitePopUp"></button>
+	<a href="http://www.ijppjournal.org/callforpaper.html" target="">
+		<div class="sitePopUpInner">
+			<b style="font-size:15px;color:#CB0707;">IJPP- Journals</font></b><br>
+
+			<center style="margin-top:10px;"><img src="http://www.ijppjournal.org/images/paper.gif" width="75%" hieght="50%" /></center>
+<center><img src="http://www.ijppjournal.org/images/enter.gif" alt="Click Here" /></center>
+			<!--<b style="font-size:13px;color:#0B0B61;">IJPP -  Journals</b>-->
+		</div>
+	</a>
+</div>
+
+
+
+  <div class="copyright">
+    <p>Copyright &copy;2016 <a href="http://www.ijppjournal.org" target="blank"><font size="1"> IJPP - International Scientific And Research Group</font></a>, All rights reserved </font></p>
+  </div>
+</footer></body>
+</html>
