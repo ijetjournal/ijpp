@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -55,8 +53,8 @@ function myFunction() {
 
     var dateClass=document.getElementsByClassName("dateDemo");
     for(var j = 0, length1 = dateClass.length; j < length1; j++) {
-    	dateClass[j].innerHTML = lastDay.getDate() + " st " + month[d.getMonth()]+" "+year;
-    	//alert(lastDay.getDate() + " st " + month[d.getMonth()]+" "+year)
+    	dateClass[j].innerHTML = lastDay.getDate() + " - " + month[d.getMonth()]+" "+year;
+    	//alert(lastDay.getDate() + " - " + month[d.getMonth()]+" "+year)
      }
 
 
