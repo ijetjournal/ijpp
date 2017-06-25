@@ -26,6 +26,50 @@
 
 </head>
 <body>
+<script type="text/javascript">
+function myFunction() {
+    var month = new Array();
+    month[0] = "January";
+    month[1] = "February";
+    month[2] = "March";
+    month[3] = "April";
+    month[4] = "May";
+    month[5] = "June";
+    month[6] = "July";
+    month[7] = "August";
+    month[8] = "September";
+    month[9] = "October";
+    month[10] = "November";
+    month[11] = "December";
+    var date = new Date(), y = date.getFullYear(), m = date.getMonth();
+    var firstDay = new Date(y, m, 1);
+    var lastDay = new Date(y, m + 1, 0);
+    //alert(lastDay.getDate());
+
+    var d = new Date();
+    //var mon = month[d.getMonth()];
+    var year=d.getFullYear();
+    var monthClass=document.getElementsByClassName("monthDemo");
+    for(var i = 0, length = monthClass.length; i < length; i++) {
+      monthClass[i].innerHTML = "Call for paper "+ month[d.getMonth()]+" "+year;
+     }
+
+    var dateClass=document.getElementsByClassName("dateDemo");
+    for(var j = 0, length1 = dateClass.length; j < length1; j++) {
+    	dateClass[j].innerHTML = lastDay.getDate() + " - " + month[d.getMonth()]+" "+year;
+    	//alert(lastDay.getDate() + " - " + month[d.getMonth()]+" "+year)
+     }
+
+
+
+    /* document.getElementsByClassName("monthDemo").innerHTML = "Call for paper "+ month[d.getMonth()]+" "+year; */
+}
+
+window.onload = function() {
+  myFunction();
+};
+</script>
+
 
 
 <script type="text/javascript">
@@ -175,7 +219,7 @@ try {
         <h2>Call For Paper</h2>
       </div>
       <div class="content" style="">
-<div class="info" style="font-size:14px;text-align:center;">Submission Last Date :  <p style="font-weight:bold; color:#08088A; margin-top:-5px; margin-bottom:-5px;">31 st  July - 2016</p></div>
+<div class="info" style="font-size:14px;text-align:center;">Submission Last Date :  <p style="font-weight:bold; color:#08088A; margin-top:-5px; margin-bottom:-5px;"><span class="dateDemo" ></span></p></div>
                             <div class="info" style="font-size:14px;text-align:center;">Acceptance Notification :  <p style=" font-weight:bold; color:#08088A; margin-top:-5px; margin-bottom:-5px;">in 3 days</p></div>
                             <div class="info" style="font-size:14px;text-align:center;">Publication Date :  <p style=" font-weight:bold; color:#08088A; margin-top:-8px;">in 2 days</p></div>
 
@@ -255,49 +299,49 @@ try {
 
            <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0">
 
-          <div align="center"><strong>Page No. </strong></div></td>
+          <div align="center"><strong>Paper ID. </strong></div></td>
         </tr>
         <tr>
       <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">1. </div></td>
 
-          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Microcontroller using Density Based Traffic Signal Systeming</a></strong></p><br>
-              <p class="style2">Authors: Kirti Karande, Hardik Vaghela</p>
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Prevalence of Chronic Kidney Disease and the Risks of Death, Hospitalization</a></strong></p><br>
+              <p class="style2">Authors: Kirti Karande , Hardik Vaghela</p>
 
 <div id="content-dece">
       <ul>
 
- <li>[ <a href="#" class="big-link" data-reveal-id="1"><font color="red"> Abstract </font></a> ]
-[ <a href="#" class="big-link" data-reveal-id="2"><font color="red"> cite </font></a>]
-[ <a href="http://www.ijppjournal.org/IJMCT/Volume1/Issue1/IJMCT-V1I1P1.pdf" target="balnk"><font color="red"> PDF </font></a>]</li>
+ <li><!--[ <a href="#" class="big-link" data-reveal-id="1"><font color="red"> Abstract </font></a> ]
+[ <a href="#" class="big-link" data-reveal-id="2"><font color="red"> cite </font></a>]-->
+[ <a href="http://www.ijppjournal.org/Volume1/Issue1/IJPP-V1I1P1.pdf" target="balnk"><font color="red"> PDF </font></a>]</li>
 
   <div id="1" class="reveal-modal">
-	 <h2>Abstract :-</h2>The project is designed to develop a concentration based dynamic traffic pointer system. The signal altered automatically on sensing the transfer. The system tries to condense possibilities of traffic jams, caused by traffic lights, to an level. The structure is based on microcontroller. We are proposing such a system that compact with such kind of problem by automatically switching the signal by calculating the time at which the vehicles inwards at stop line. The image captured in the traffic signal is processed and transformed into grayscale image then its threshold is calculated asked on which the shape has been drawn in order to calculate the number of vehicles current in the image. Administrator sitting on computer can domination system (microcontroller) to download recorded information, update light delays, erase memory, etc.<br /><strong><font color="red">Key word :- </font></strong> Microcontroller,Image Processing, light emitting diode, wireless sensor networks.</p>
+	 <h2>Abstract :-</h2>Chronic kidney disease is a serious state linked with untimely mortality, decreased worth of life, and improved health-care expenditures. Chronic kidney disease refers to an permanent loss of renal role that develops due to a Large factorial etiology over a stage of a few years. Primarily it starts as a biochemical defect and progresses in stages. Earlier stages of Chronic kidney disease can be detected during usual laboratory capacity. Improving Global Outcomes guideline on lipid executive in Chronic kidney disease optional lipid lowering edications for lots of community with Chronic kidney disease, and indifferent the proposal to utilize statins to get individual lipid targets. The new management adopts a ‘set and forget’ advance whereby direction of statin or statin /ezetimibe arrangement is base on period, eGFR stage, and cardiovascular infection threat, irrespective of Chronic kidney disease step Once statin therapy is initiated here is no proof to maintain constant monitoring of lipid level.<br /><strong><font color="red">Key word :- </font></strong> CKD , ESRD , Kindney , Cardiovascular disease , ACR.</p>
 			<a class="close-reveal-modal">&#215;</a>
 	  </div>
         <div id="2" class="reveal-modal">
 	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
 
-			<strong></strong><p class="bord"><font size ="3">Kirti Karande, Hardik Vaghela <font color="red"><em><strong>"Microcontroller using Density Based Traffic Signal Systeming"</em></font></strong> Vol. 1 - Issue 1 ( Nov - Dec 2015), <strong>IJPP - International Journal of Pharmacy and Pharmaceutical</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
+			<strong></strong><p class="bord"><font size ="3">Ramesh A Rathod , A. R. Pathak, D. M. Sakarkar, H. K. Kunjwani <font color="red"><em><strong>"Prevalence of Chronic Kidney Disease and the Risks of Death, Hospitalization"</em></font></strong> Vol. 1 - Issue 1 ( Nov - Dec 2015), <strong>IJPP - International Journal of Pharmacy and Pharmaceutical</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
   			<a class="close-reveal-modal">&#215;</a>
 
 
 	  </div></div></td>
 
-          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>1-4</strong></div></td>
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>IJPP-V1I1P1</strong></div></td>
         </tr>
 
          <tr>
       <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">2. </div></td>
 
-          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Over speed indication and Automatic Accident Avoidance systems in a four wheeler</a></strong></p><br>
-              <p class="style2">Authors: Khushbu M. Lodha, Elkadiri Kamal Eddine</p>
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>End-of-Life Care in Patients Dying and superior Diagnostic Aids in oral Cancer Screening</a></strong></p><br>
+              <p class="style2">Authors: Ramesh A Rathod , A. R. Pathak, D. M. Sakarkar, H. K. Kunjwani </p>
 
 <div id="content-dece">
       <ul>
 
- [<a href="#" class="big-link" data-reveal-id="3"><font color="red"> Abstract </font></a>]
-[ <a href="#" class="big-link" data-reveal-id="4"><font color="red"> cite </font></a>]
-[ <a href="http://www.ijppjournal.org/IJMCT/Volume1/Issue1/IJMCT-V1I1P2.pdf" target="balnk"><font color="red"> PDF </font></a>]
+ <!--[<a href="#" class="big-link" data-reveal-id="3"><font color="red"> Abstract </font></a>]
+[ <a href="#" class="big-link" data-reveal-id="4"><font color="red"> cite </font></a>]-->
+[ <a href="http://www.ijppjournal.org/Volume1/Issue1/IJPP-V1I1P2.pdf" target="balnk"><font color="red"> PDF </font></a>]
 
   <div id="3" class="reveal-modal">
 	 <h2>Abstract :-</h2>Automotive vehicles are increasingly person equipped with fender-bender avoidance and notice systems for predicting the prospective collision with an peripheral object, such as an extra vehicle or a pedestrian. The system has a computer which stores the speed limits of unusual areas. The GPS in the system feeds the demand location of the car to the computer which looks up in its record to determine the acceptable speed for the area and confines the car within the satisfactory speed. Here is an inductive proximity sensor, requires a metal objective. The proximity sensor fixed near the wheel of vehicle to identify the sensor we permanent one plate on the wheel It also provides a admonition signal to the driver if the expanse between vehicle and obstacle crosses a finicky limit. It also monitors the speed of the vehicle and if the speed maximum value is exceeded it is clued-up to the driver.<br /><strong><font color="red">Key word :- </font> </strong> Accident avoiding system, working of over speed indicator. Brake Assist.</font></p>
@@ -306,13 +350,13 @@ try {
         <div id="4" class="reveal-modal">
 	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
 
-			<strong></strong><p class="bord"><font size ="3">Khushbu M. Lodha, Elkadiri Kamal Eddine <font color="red"><em><strong>"Over speed indication and Automatic Accident Avoidance systems in a four wheeler"</em></font></strong> Vol. 1 - Issue 1 ( Nov - Dec 2015), <strong>IJPP - International Journal of Pharmacy and Pharmaceutical</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
+			<strong></strong><p class="bord"><font size ="3">Khushbu M. Lodha, Elkadiri Kamal Eddine <font color="red"><em><strong>"End-of-Life Care in Patients Dying and superior Diagnostic Aids in oral Cancer Screening"</em></font></strong> Vol. 1 - Issue 1 ( Nov - Dec 2015), <strong>IJPP - International Journal of Pharmacy and Pharmaceutical</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
   			<a class="close-reveal-modal">&#215;</a>
 
 
 	  </div></div></td>
 
-          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>5-8</strong></div></td>
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>IJPP-V1I1P2</strong></div></td>
         </tr>
 
 
@@ -320,15 +364,15 @@ try {
   <tr>
       <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">3. </div></td>
 
-          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Earth Process AutomationSpace Techniques </a></strong></p><br>
-              <p class="style2">Authors: Simranjit Kaur, Kiran Jyoti </p>
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Advances in Nanotechnology Based Semi Solid Pharmaceutical Dosage Forms </a></strong></p><br>
+              <p class="style2">Authors: M.R.Salaudeen , Omer Siddique </p>
 
 <div id="content-dece">
       <ul>
 
- [<a href="#" class="big-link" data-reveal-id="5"><font color="red"> Abstract </font></a>]
-[ <a href="#" class="big-link" data-reveal-id="6"><font color="red"> cite </font></a>]
-[ <a href="http://www.ijppjournal.org/IJMCT/Volume1/Issue1/IJMCT-V1I1P3.pdf" target="balnk"><font color="red"> PDF </font></a>]
+ <!--[<a href="#" class="big-link" data-reveal-id="5"><font color="red"> Abstract </font></a>]
+[ <a href="#" class="big-link" data-reveal-id="6"><font color="red"> cite </font></a>]-->
+[ <a href="http://www.ijppjournal.org/Volume1/Issue1/IJPP-V1I1P3.pdf" target="balnk"><font color="red"> PDF </font></a>]
 
   <div id="5" class="reveal-modal">
 	 <h2>Abstract :-</h2>The space atmosphere is expected to be beneficial for creation of a variety of products. Once the heavy capitalization costs of assembling the withdrawal and built-up facilities is paid, the making will need to be economically cost-effective in order to become self-sustaining and beneficial to society. The most major cost is overcoming the force hurdle for boosting equipment into orbit. Once this barrier is considerably reduced in cost per kilogram, the entry price for space built-up can make it much more good -looking to entrepreneurs. Although solar energy is everywhere and rich, and compact nuclear energy sources can be brought up from Earth, it is still necessary to have machinery in space for capturing, storing, converting, and using the energy. Perhaps non global resources can be used in the creation of some of this machinery.<br /><strong><font color="red">Key word :- </font> </strong> Earth, Electric Wave, Earth Process, Automation.</font></p>
@@ -337,13 +381,13 @@ try {
         <div id="6" class="reveal-modal">
 	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
 
-			<strong></strong><p class="bord"><font size ="3">Simranjit Kaur, Kiran Jyoti <font color="red"><em><strong>"Earth Process Automation Techniques "</em></font></strong> Vol. 1 - Issue 1 ( Nov - Dec 2015), <strong>IJPP - International Journal of Pharmacy and Pharmaceutical</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
+			<strong></strong><p class="bord"><font size ="3">Simranjit Kaur, Kiran Jyoti <font color="red"><em><strong>"Advances in Nanotechnology Based Semi Solid Pharmaceutical Dosage Forms "</em></font></strong> Vol. 1 - Issue 1 ( Nov - Dec 2015), <strong>IJPP - International Journal of Pharmacy and Pharmaceutical</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
   			<a class="close-reveal-modal">&#215;</a>
 
 
 	  </div></div></td>
 
-          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>9-11</strong></div></td>
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>IJPP-V1I1P3</strong></div></td>
         </tr>
 
 
@@ -351,15 +395,15 @@ try {
 <tr>
       <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">4. </div></td>
 
-          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Bomb Detection Robotics using Embedded Controller </a></strong></p><br>
-              <p class="style2">Authors: Gurdas , Karan </p>
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Mechanisms of Innate and Adaptive Mucosal Immune Systems & Inoculation</a></strong></p><br>
+              <p class="style2">Authors: S. Kaushik , Kamla Pathak </p>
 
 <div id="content-dece">
       <ul>
 
- [<a href="#" class="big-link" data-reveal-id="7"><font color="red"> Abstract </font></a>]
-[ <a href="#" class="big-link" data-reveal-id="8"><font color="red"> cite </font></a>]
-[ <a href="http://www.ijppjournal.org/IJMCT/Volume1/Issue1/IJMCT-V1I1P4.pdf" target="balnk"><font color="red"> PDF </font></a>]
+ <!--[<a href="#" class="big-link" data-reveal-id="7"><font color="red"> Abstract </font></a>]
+[ <a href="#" class="big-link" data-reveal-id="8"><font color="red"> cite </font></a>]-->
+[ <a href="http://www.ijppjournal.org/Volume1/Issue1/IJPP-V1I1P4.pdf" target="balnk"><font color="red"> PDF </font></a>]
 
   <div id="7" class="reveal-modal">
 	 <h2>Abstract :-</h2> Now-a-days, robotic systems have less manual operations, flexibility, dependability and accurate. Detect the bomb by transfer the robot to the particular place. A person can work the system from personal computer during wireless RF control. Aims at designing and execute the bomb ,fire and obstacle exposure. The IR sensor is a pair sensors has a beneficiary and a transmitter sensor. In the current scenario of war situations, unmanned systems plays very main role to minimize human losses. This robot is fitted with motors. A micro controller is used to manage all operations. According to the motor operations the robot will operate as individual in program. Whenever any fire is detected, the Buzzer will ON.<br /><strong><font color="red">Key word :- </font> </strong> Bomb Detection, IR sensor, Robotics, Web server.</p>
@@ -368,13 +412,13 @@ try {
         <div id="8" class="reveal-modal">
 	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
 
-			<strong></strong><p class="bord"><font size ="3">Gurdas , Karan , <font color="red"><em><strong>"Bomb Detection Robotics using Embedded Controller "</em></font></strong> Vol. 1 - Issue 1 ( Nov - Dec 2015), <strong>IJPP - International Journal of Pharmacy and Pharmaceutical</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
+			<strong></strong><p class="bord"><font size ="3">Gurdas , Karan , <font color="red"><em><strong>"Mechanisms of Innate and Adaptive Mucosal Immune Systems & Inoculation "</em></font></strong> Vol. 1 - Issue 1 ( Nov - Dec 2015), <strong>IJPP - International Journal of Pharmacy and Pharmaceutical</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
   			<a class="close-reveal-modal">&#215;</a>
 
 
 	  </div></div></td>
 
-          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>12-15</strong></div></td>
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>IJPP-V1I1P4</strong></div></td>
         </tr>
 
 
@@ -382,15 +426,15 @@ try {
  <tr>
       <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">5. </div></td>
 
-          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Hybrid Design Electro thermal Polymeric Micro gripper with Integrated Force Sensor</a></strong></p><br>
-              <p class="style2">Authors: Utpal , Nihal</p>
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Potential Anti-cancers from Antimicrobial Peptides: A Review</a></strong></p><br>
+              <p class="style2">Authors: Kalpesh K,G .Joshi ,Rajan P</p>
 
 <div id="content-dece">
       <ul>
 
- [<a href="#" class="big-link" data-reveal-id="9"><font color="red"> Abstract </font></a>]
-[ <a href="#" class="big-link" data-reveal-id="10"><font color="red"> cite </font></a>]
-[ <a href="http://www.ijppjournal.org/IJMCT/Volume1/Issue1/IJMCT-V1I1P5.pdf" target="balnk"><font color="red"> PDF </font></a>]
+ <!-- [<a href="#" class="big-link" data-reveal-id="9"><font color="red"> Abstract </font></a>]
+[ <a href="#" class="big-link" data-reveal-id="10"><font color="red"> cite </font></a>]-->
+[ <a href="http://www.ijppjournal.org/Volume1/Issue1/IJPP-V1I1P5.pdf" target="balnk"><font color="red"> PDF </font></a>]
 
   <div id="9" class="reveal-modal">
 	 <h2>Abstract :-</h2>Micro grippers are characteristic MEMS devices used to pick, hold and transport micro-objects. Micro grippers are usually used in the field of micro-assembly, micro-surgery and management of micro-particles. This force sensing declaration provides feedback in the range of the forces that overlook the micro management process. The micro gripper, fabricated by electro-discharge machining, features force sensing ability, large force output, and large displacements to contain objects of various sizes. The design parameters for the surrounded electromagnetic actuators were selected on the basis of finite element sensitivity analysis. The concept is also demonstrated with HeLa cells, thus providing a useful tool in biological research and cell assays.<br /><strong><font color="red">Key word :- </font></strong> Hybrid, micro gripper,sensor.</p>
@@ -399,13 +443,13 @@ try {
         <div id="10" class="reveal-modal">
 	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
 
-			<strong></strong><p class="bord"><font size ="3">Utpal , Nihal, <font color="red"><em><strong>"	Hybrid Design Electro thermal Polymeric Micro gripper with Integrated Force Sensor "</em></font></strong> Vol. 1 - Issue 1 ( Nov - Dec 2015), <strong>IJPP - International Journal of Pharmacy and Pharmaceutical</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
+			<strong></strong><p class="bord"><font size ="3">Utpal , Nihal, <font color="red"><em><strong>"Potential Anti-cancers from Antimicrobial Peptides: A Review "</em></font></strong> Vol. 1 - Issue 1 ( Nov - Dec 2015), <strong>IJPP - International Journal of Pharmacy and Pharmaceutical</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
   			<a class="close-reveal-modal">&#215;</a>
 
 
 	  </div></div></td>
 
-          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>16-19</strong></div></td>
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>IJPP-V1I1P5</strong></div></td>
         </tr>
 
 
