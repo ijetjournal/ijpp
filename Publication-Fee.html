@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -7,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>IJPP - Publication Fee</title>
+<title>IJPP - Publication Charges</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <link rel="icon" type="image/png" href="http://www.ijppjournal.org/images/myicon1.jpg" />
 <meta name="description" content="IJPP - International Journal of Pharmacy and Pharmaceutical" />
@@ -68,35 +67,6 @@ window.onload = function() {
 </script>
 
 
-
-
-<script type="text/javascript">
-$(document).ready(function(){
-	$('#dismiss').live('click', function(){
-		$('.output').fadeOut(0);
-	});
-	$('#admorebtn').live('click', function(){
-		$('#morefieldwrap').append('<p><input type="file" name="file[]" multiple="multiple" autocomplete="off" required="required" class="field filefield" /><input type="button" value="Remove" id="rmmorebtn" class="mrbtn" /></p>');
-	});
-	$('#rmmorebtn').live('click', function(){
-		$(this).parent('p').remove();
-	});
-	$('.downloadLink').live('click', function(){
-		var id = $(this).attr('id');
-		$.ajax({
-			type:"POST",
-			url:"http://www.ijppjournal.org/IMAGE/",
-			data:"cmd=downloads&id=" + id,
-			cache:false,
-			success: function(){}
-		});
-	});
-	$('#closeSitePopUp').live('click', function(){
-		$('.sitePopUp').fadeOut(0);
-	});
-});
-</script>
-
 <script type="text/javascript">
 try {
 } catch(err) {}</script>
@@ -123,27 +93,55 @@ try {
   ga('send', 'pageview');
 
 </script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#dismiss').live('click', function(){
+		$('.output').fadeOut(0);
+	});
+	$('#admorebtn').live('click', function(){
+		$('#morefieldwrap').append('<p><input type="file" name="file[]" multiple="multiple" autocomplete="off" required="required" class="field filefield" /><input type="button" value="Remove" id="rmmorebtn" class="mrbtn" /></p>');
+	});
+	$('#rmmorebtn').live('click', function(){
+		$(this).parent('p').remove();
+	});
+	$('.downloadLink').live('click', function(){
+		var id = $(this).attr('id');
+		$.ajax({
+			type:"POST",
+			url:"http://www.ijppjournal.org/IMAGE/",
+			data:"cmd=downloads&id=" + id,
+			cache:false,
+			success: function(){}
+		});
+	});
+	$('#closeSitePopUp').live('click', function(){
+		$('.sitePopUp').fadeOut(0);
+	});
+});
+</script>
 <div class="clear"></div>
 <div class="zerogrid">
   <div >
 
       <ul id="css3menu1" class="topmenu">
-        <li class="topfirst"><a href="http://www.ijppjournal.org" style="width:110px;height:8px;line-height:9px; text-align:center;">Welcome</a></li>
-       <li class="topmenu"><a  style="width:120px;height:8px;line-height:9px; text-align:center;">About IJPP</a>
-	             <ul>
-	   <li><a href="http://www.ijppjournal.org/About.html" style="width:110px;height:8px;line-height:9px; text-align:left;">About us</a></li>
+      <li class="topfirst"><a href="http://www.ijppjournal.org/index.html" style="width:110px;height:8px;line-height:9px; text-align:center;">Welcome</a></li>
+       <li class="topmenu"><a href="http://www.ijppjournal.org/About.html" style="width:120px;height:8px;line-height:9px; text-align:center;">About IJPP</a>
+	             <!--<ul>
+	               <li><a href="http://www.ijppjournal.org/About.html" style="width:110px;height:8px;line-height:9px; text-align:left;">About us</a>
+	               </li>
+
 	               <li><a href="http://www.ijppjournal.org/Indexing.html" style="width:100px;height:8px;line-height:9px; text-align:left;">IJPP Indexing</a></li>
-	             </ul>
+	             </ul>-->
         </li>
         <li class="topmenu"><a href="http://www.ijppjournal.org/callforpaper.html" style="width:120px;height:8px;line-height:9px; text-align:center;">Call For Paper</a> </li>
         <li class="topmenu"><a href="http://www.ijppjournal.org/Archives.html" style="width:120px;height:8px;line-height:9px; text-align:center;">IJPP Archives</a></li>
-        <li class="topmenu"><a  style="width:120px;height:8px;line-height:9px; text-align:center;">For Author</a>
-          <ul>
+        <li class="topmenu"><a href="http://www.ijppjournal.org/publication-guidelines.html" style="width:120px;height:8px;line-height:9px; text-align:center;">For Author</a>
+          <!--<ul>
                 <li class="subfirst"><a href="http://www.ijppjournal.org/publication-guidelines.html" style="width:135px;height:8px;line-height:9px; text-align:left;">Publication Guidelines</a></li>
            <li><a href="http://www.ijppjournal.org/PeerReview.html" style="width:100px;height:8px;line-height:9px; text-align:left;">Peer Review</a></li>
             <li><a href="http://www.ijppjournal.org/Publication-Fee.html"  style="width:100px;height:8px;line-height:19px; text-align:left;">Processing Fee</a></li>
              <li><a href="http://www.ijppjournal.org/Submit-Paper.html" style="width:100px;height:8px;line-height:9px; text-align:left;">Submit Your Paper</a></li>
-          </ul>
+          </ul>-->
         </li>
 
         <li class="topmenu"><a href="http://www.ijppjournal.org/faq.html" style="width:100px;height:8px;line-height:9px; text-align:center;">FAQs</a></li>
@@ -154,7 +152,7 @@ try {
 <section id="content">
   <div class="wrap-content zerogrid">
 
-     <center> <font color="#000040"><strong> submit your article : <a href="#">IJPPchief@gmail.com</a></strong></font></center><br>
+  <center> <font color="#000040"><strong> submit your article : <a href="#">IJPPchief@gmail.com</a></strong></font></center><br>
 
     <center><a href="http://www.ijppjournal.org/callforpaper.html"><font face="arial" font color="#08088A" font size="4"><strong><u> <span class="monthDemo"></span><img src="http://www.ijppjournal.org/images/new.gif" align="#" style="margin:0px"></u></strong></font></a></center>
 
@@ -172,9 +170,9 @@ try {
 <li><a href="http://www.ijppjournal.org/Home.html" title="Home">Home</a></li>
 <li><a href="http://www.ijppjournal.org/aimscope.html" title="Aim and Scope">Aim and Scope</a></li>
 <li><a href="http://www.ijppjournal.org/Editorialboard.html" title="Journals">Editorialboard</a></li>
-<li><a href="http://www.ijppjournal.org/callforpaper.html" title="Call For Paper">Call For Paper</a></li>
+<!--<li><a href="http://www.ijppjournal.org/callforpaper.html" title="Call For Paper">Call For Paper</a></li>-->
 <li><a href="http://www.ijppjournal.org/Publication-Fee.html" title="Processing Charges">Processing Charges</a></li>
-<li><a href="http://www.ijppjournal.org/publish_paper.html" title="Submission">Submission</a></li>
+<!--<li><a href="http://www.ijppjournal.org/publish_paper.html" title="Submission">Submission</a></li>-->
 <li><a href="http://www.ijppjournal.org/instructions.html" title=" Author Instructions">Author Instructions</a></li>
  </ul>
 
@@ -254,16 +252,7 @@ try {
     </div>
 
 
-		<div class="box">
-      <div class="heading">
-        <h2>Online Visiters</h2>
-      </div>
-		 <br>
-<center><script type="text/javascript" src="http://widget.supercounters.com/flag.js"></script><script type="text/javascript">sc_flag(1246642,"FFFFFF","000000","cccccc",2,10,0,0)</script><br><noscript><a href="http://www.supercounters.com/">Flag Counter</a></noscript>
-</center> <br>
 
-
-    </div>
   </div>
 </div>
       <!--=========================================contact query=====================================-->
@@ -353,7 +342,6 @@ try {
 <br><br><br>
 
 
-
             </div>
           </article>
         </div>
@@ -363,22 +351,8 @@ try {
 </section>
 <footer>
 
-
-<div class="sitePopUp">
-	<button type="button" id="closeSitePopUp"></button>
-	<a href="http://www.ijppjournal.org/callforpaper.html" target="">
-		<div class="sitePopUpInner">
-			<b style="font-size:15px;color:#CB0707;">IJPP- Journals</font></b><br>
-
-			<center style="margin-top:10px;"><img src="http://www.ijppjournal.org/images/paper.gif" width="75%" hieght="50%" /></center>
-<center><img src="http://www.ijppjournal.org/images/enter.gif" alt="Click Here" /></center>
-			<!--<b style="font-size:13px;color:#0B0B61;">IJPP -  Journals</b>-->
-		</div>
-	</a>
-</div>
-
   <div class="copyright">
-    <p>Copyright &copy;2016 <a href="http://www.ijppjournal.org" target="blank"><font size="1"> IJPP - International Scientific And Research Group</font></a>, All rights reserved </font></p>
+    <p>Copyright &copy;2018 <a href="http://www.ijppjournal.org" target="blank"><font size="1"> IJPP - International Journal of Pharmacy and Pharmaceutical</font></a>, All rights reserved </font></p>
   </div>
 </footer></body>
 </html>
